@@ -1,0 +1,51 @@
+.project {
+display: grid;
+width: 100vw;
+height: 100vh;
+grid-template-areas:
+"he he he"
+"ma ma as"
+"se se se"
+"fo fo fo"
+;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 2fr 4fr 1fr 1fr;
+grid-gap: 2px;
+}
+    
+.header {
+grid-area: he;
+background-color: orange;
+}
+
+.img {
+    align-self: flex-end;
+    width: 40px;
+    }
+    
+.main {
+grid-area: ma;
+background: yellow;
+}
+    
+.aside {
+grid-area: as;
+background: orange;
+}
+   
+.section {
+grid-area: se;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-gap: 8px;
+}
+    
+.innerdiv {
+background: brown;
+}
+    
+.footer {
+grid-area: fo;
+background: burlywood;
+}
